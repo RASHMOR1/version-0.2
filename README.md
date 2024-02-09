@@ -46,6 +46,9 @@ The smart contracts representing these blocks (Containing Block, Leaf Block) wil
 #### Functions:
 - **transferToStorageSlot:** Interact with the storage contract to add volume and quality information about ore from this block to a specified slot in the storage contract.
 
+  ![image](https://github.com/RASHMOR1/version-0.1/assets/91812990/015c65b4-61c1-4997-ab64-a1e199422910)
+
+
 
 ### OreStorage Contract
 
