@@ -14,7 +14,7 @@ contract OreStorage {
     ////////////////////////////////
 
     uint256[] public storageSlots;
-    uint256 public qualities;
+    uint256[] public qualities;
     mapping(uint256 => bool) public isInQuality;
     mapping(uint256 => uint256) public qualityToVolume;
     // uint256 is a number of slot and address is an address of a OreSlot smart-contract that will contain information about the volume of ore and its quality
