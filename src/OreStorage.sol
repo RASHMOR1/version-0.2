@@ -60,11 +60,5 @@ contract OreStorage {
         emit OreStorage__OreSlotsPopulated();
     }
 
-    ////////////////////////////
-    ///// View Functions
-    ////////////////////////////////
 
-    function getTotalVolumeInStorage() public view returns (uint256) {
-        return totalVolumeInStorage;
-    }
 }
