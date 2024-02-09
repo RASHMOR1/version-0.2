@@ -46,3 +46,42 @@ The smart contracts representing these blocks (Containing Block, Leaf Block) wil
 #### Functions:
 - **transferToStorageSlot:** Interact with the storage contract to add volume and quality information about ore from this block to a specified slot in the storage contract.
 
+
+### OreStorage Contract
+
+The OreStorage contract represents a repository for storing mined ore. Each storage slot is managed by a corresponding OreSlot contract. Only Leaf Block contracts can interact with the OreStorage contract.
+
+#### Variables:
+- **storageSlots:** Array of addresses of oreSlot contracts for this storage.
+- **qualities:** Array of qualities present in this storage.
+- **isInQuality:** Mapping of quality to boolean indicating presence in this storage.
+- **qualityToVolume:** Mapping of quality to volume of ore for that quality in this storage.
+- **storageSlotsToAddress:** Mapping of slot number to its corresponding contract address.
+- **storageSlotsAddresses:** Array of addresses of slots in this storage.
+- **totalVolumeInStorage:** Total volume of ore in this storage.
+
+#### Functions:
+- **addToStorage:** Interacts with storage slots to add volume and quality information.
+- **populateOreStorage:** Populates storage slot addresses during deployment.
+
+### OreSlot Contract
+
+The OreSlot contract represents an individual storage slot for ore. It manages the volume and quality of ore stored in that slot.
+
+#### Variables:
+- **qualities:** Array of qualities present in this slot.
+- **isInQuality:** Mapping of quality to boolean indicating presence in this slot.
+- **qualityToVolume:** Mapping of quality to volume of ore for that quality in this slot.
+- **totalVolume:** Total volume of ore in this slot.
+- **priceFeed:** Address of the oracle providing the price feed for ore.
+
+#### Functions:
+- **setPriceFeed:** Set the price feed oracle address.
+- **addNewVolume:** Update the storage of this ore slot by adding volume to a specified quality.
+- **getCurrentUSDValueOfOreInThisSlot:** Calculate the approximate USD value of ore in this slot using the oracle.
+- **moveToProcessingPlant:** Move ore from storage to processing plant and clear all ore data from this contract.
+- **getPrice:** Get the current price of ore from the oracle.
+- **getApproximateOreVolume:** Calculate the approximate total volume of ore in this slot.
+- **getQualitiesLength:** Return the number of qualities in this slot.
+
+
