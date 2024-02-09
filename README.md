@@ -89,4 +89,11 @@ The OreSlot contract represents an individual storage slot for ore. It manages t
 - **getApproximateOreVolume:** Calculate the approximate total volume of ore in this slot.
 - **getQualitiesLength:** Return the number of qualities in this slot.
 
+## Version 0.2 Plans
+
+1. **Automated Updates**: Implement functionality to automatically update `currentReadinessStatus` and `minedPercentage` in all `containingBlocks` when `LeafBlocks` are mined.
+
+2. **Quality Tracking**: Introduce a `realQuality` variable to the `oreSlot` contract. This variable will store data from ore slot sampling.
+
+3. **Code Refactoring**: Conduct a comprehensive code review and refactor for improved readability, efficiency, and maintainability.
 
