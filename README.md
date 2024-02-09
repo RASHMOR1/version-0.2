@@ -10,6 +10,8 @@ Version #0.1 of "Mining industry in blockchain" project
 In the ore mining industry, controlling the quality of ore is crucial for efficient resource extraction. To achieve this, ore bodies are divided into blocks, each containing information about the ore quality within that block. To enhance the accuracy of this information, blocks are further subdivided into smaller units called sub-blocks, which can then be divided into even smaller blocks. In this project, the smallest units of blocks are referred to as Leaf Blocks, while the larger blocks containing them are referred to as Containing Blocks (which can have child blocks).
 
 The smart contracts representing these blocks (Containing Block, Leaf Block) will inherit from an abstract contract named BlockAbstract, which includes common functions for these smart contracts.
+![image](https://github.com/RASHMOR1/version-0.1/assets/91812990/9409148a-7eb3-488c-8e52-3bbbff9433b6)
+
 
 ### BlockAbstract Contract
 
