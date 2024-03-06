@@ -142,6 +142,7 @@ These are represented by dynamic Non-Fungible Tokens (NFTs) with both mutable an
 **Mutable Parameters:**
 
 - Year of Manufacture
+- Machinery Condition
 - Serial Number
 
 ![image](https://github.com/RASHMOR1/version-0.2/assets/91812990/122e6caa-083a-4bc4-9480-72241b86b4d6)
