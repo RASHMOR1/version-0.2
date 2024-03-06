@@ -144,6 +144,9 @@ These are represented by dynamic Non-Fungible Tokens (NFTs) with both mutable an
 - Year of Manufacture
 - Serial Number
 
+![image](https://github.com/RASHMOR1/version-0.2/assets/91812990/122e6caa-083a-4bc4-9480-72241b86b4d6)
+
+
 ## EmployeesContract Contract
 
 In this contract, each NFT (employee) has unique immutable parameters. Implementing a standard IPFS system here is not feasible because when a new employee is added, we would need to include this new employee in the off-chain data structure, store it on IPFS, and then modify the base URI in this contract. This approach does not appear to be reliable. Therefore, the best solution is to use a mapping with individual IPFS links.
